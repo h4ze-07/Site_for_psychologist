@@ -49,6 +49,8 @@ img {
         line-height: 34px;
         border-radius: 10px;
         cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
     }
 
     .btn:hover,.btn:focus {
@@ -260,5 +262,42 @@ img {
 
 /*about*/
 
+    .about {
+        display: flex;
+        gap: 50px;
+    }
+
+    .about__title {
+        max-width: 254px;
+        font-weight: 700;
+        font-size: 36px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .about__text {
+        max-width: 625px;
+        margin: 0;
+        padding-bottom: 43px;
+    }
+
+    .about__button {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 61px;
+    }
+
+    .btn_bordered {
+        background-color: transparent;
+        border-color: #2D5E5E;
+    }
+
+    .about__photo {
+        width: 495px;
+        min-height: 330px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 /*about*/
 
