@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
-    <title>Document</title>
+    <title>Phyholog Site</title>
 </head>
 <body>
 
@@ -127,15 +127,20 @@
         <h2 class="subtitle">
             Записаться на прием
         </h2>
-        <input type="text" class="contact-form__input">
-        <input type="text" class="contact-form__input">
-        <input type="text" class="contact-form__input">
-        <textarea class="contact-form__input contact-form__input_textarea"></textarea>
-
-        <label class="contact-form__checkbox">
-            <input type="checkbox">
-            Я согласен с политикой конфиденциальности
-        </label>
+        <input type="text" class="contact-form__input" placeholder="Ваше имя *">
+        <input type="tel" class="contact-form__input" placeholder="Ваш телефон *">
+        <select name="meeting" class="contact-form__input contact-form__selection">
+            <option value="theme">Тема встречи *</option>
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+        </select>
+        <textarea class="contact-form__input contact-form__input_textarea" placeholder="Пожелания"></textarea>
+            
+            <label class="contact-form__checkbox">
+                <input type="checkbox" class="checkbox" checked>
+                Я согласен с политикой конфиденциальности
+            </label>
 
         <button class="btn" type="submit">
             Отправить
@@ -173,7 +178,8 @@
                 Довольных клиентов
             </h3>
             <p class="services__desc">
-                Результат — улыбка на лице и ощущение счастья            </p>
+                Результат — улыбка на лице и ощущение счастья            
+            </p>
         </article>
     </section>
 
@@ -201,7 +207,20 @@
         </article>
     </section>
 
-    
+    <section class="contact-form contact-form-promo">
+        <h2 class="subtitle">
+            Записаться на прием
+        </h2>
+        <input type="text" class="contact-form__input" placeholder="Ваше имя *">
+        <input type="tel" class="contact-form__input" placeholder="Ваш телефон *">
+        <button class="btn" type="submit">
+            Записаться со скидкой
+        </button>
+        <label class="contact-form__checkbox">
+            <input type="checkbox" class="checkbox" checked>
+            Я согласен с политикой конфиденциальности
+        </label>
+    </section>
 </main>
 
 <footer class="footer center">

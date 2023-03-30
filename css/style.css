@@ -183,6 +183,8 @@ img {
         justify-content: center;
         padding-left: calc(50vw - 385px);
         padding-right: calc(50vw - 385px);
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .contact-form .subtitle {
@@ -192,9 +194,18 @@ img {
 
     .contact-form__checkbox {
         grid-column: 1 / -1;
+        align-self: center;
         text-align: center;
         margin: 10px 0;
         display: inline-block;
+        font-size: 12px;
+        color: #2D5E5E;
+        line-height: 2.5;   
+    }
+
+    .checkbox {
+        margin-right: 17.05px;
+        align-self: center;
     }
 
     .contact-form__input.contact-form__input_textarea {
@@ -203,10 +214,67 @@ img {
         resize: none;
     }
 
-    .contact-form {
-
+    .contact-form__input {
+        padding: 8px 20.6px;
+        border-radius: 10px;
+        border: 1px solid #000000;
     }
+
+    .contact-form__input_textarea {
+        padding-top: 8px;
+        padding-left: 20px;
+    }
+
+    .contact-form__input::placeholder,
+    .contact-form__selection,
+    .contact-form__input_textarea::placeholder {
+        color: #000000;
+        font-size: 18px;
+        line-height: 1.33;
+        font-weight: 400;
+    }
+
+    .contact-form__selection {
+        padding-right: 14.37px;
+        appearance: none;
+        background-image: url(../img/select.svg);
+        background-position: bottom 50% right 14.37px;
+        background-repeat: no-repeat;
+    }
+
+    .contact-form .btn {
+        grid-column: 1 / -1;
+        justify-self: center;        
+    }
+
 /*contact-form*/
+
+/* contact-form promo */
+    .contact-form-promo {
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: 1fr 40px 30px;
+        padding-left: 153px;
+        padding-right: 153px;
+    }
+
+    .contact-form-promo .subtitle {
+        grid-column: 1 / 4;
+        margin: 0 0 30px 0;
+        width: 100%;
+    }
+
+    .contact-form-promo .btn {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        max-width: 370px; 
+    }
+
+    .contact-form-promo .contact-form__checkbox {
+        margin: -5px 0 0 0;
+    }
+
+/* contact-form promo */
+
 
 /*services*/
     .services {
@@ -259,6 +327,8 @@ img {
         text-align: left;
     }
 /*services*/
+
+
 
 /*about*/
 
