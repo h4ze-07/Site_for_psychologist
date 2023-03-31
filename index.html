@@ -129,17 +129,22 @@
         </h2>
         <input type="text" class="contact-form__input" placeholder="Ваше имя *">
         <input type="tel" class="contact-form__input" placeholder="Ваш телефон *">
-        <select name="meeting" class="contact-form__input contact-form__selection">
-            <option value="theme">Тема встречи *</option>
-            <option value="value1">Value 1</option>
-            <option value="value2">Value 2</option>
-            <option value="value3">Value 3</option>
-        </select>
+        <label class="contact-form__input contact-form__selection">
+            <select name="meeting" class="contact-form__selection-list">
+                <option value="theme">Тема встречи *</option>
+                <option value="value1">Value 1</option>
+                <option value="value2">Value 2</option>
+                <option value="value3">Value 3</option>
+            </select>
+        </label>
+        
         <textarea class="contact-form__input contact-form__input_textarea" placeholder="Пожелания"></textarea>
             
             <label class="contact-form__checkbox">
-                <input type="checkbox" class="checkbox" checked>
-                Я согласен с политикой конфиденциальности
+                <input type="checkbox" class="contact-form__checkbox-input visually-hidden" required value="agree with policy">
+                <span class="contact-form__checkbox-label">
+                    Я согласен с политикой конфиденциальности
+                </span>
             </label>
 
         <button class="btn" type="submit">
@@ -216,10 +221,14 @@
         <button class="btn" type="submit">
             Записаться со скидкой
         </button>
+
         <label class="contact-form__checkbox">
-            <input type="checkbox" class="checkbox" checked>
-            Я согласен с политикой конфиденциальности
+            <input type="checkbox" class="contact-form__checkbox-input visually-hidden" required value="agree with policy">
+            <span class="contact-form__checkbox-label">
+                Я согласен с политикой конфиденциальности
+            </span>
         </label>
+
     </section>
 </main>
 
