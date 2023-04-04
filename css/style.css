@@ -90,12 +90,18 @@ img {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    .nav-toggler {
+        display: none;
+    }
 /*header*/
 /*nav*/
     .nav__list {
         display: flex;
         list-style: none;
         gap: 15px;
+        margin: 0;
+        padding: 0;
     }
     .nav__link {
         color: #85AAAB;
@@ -306,7 +312,6 @@ img {
         -webkit-appearance: none;
         box-sizing: border-box;
         outline: none;
-        width: 100%;
         padding: 8px 14.37px 8px 20px;
         transform-origin: center;
     }
@@ -338,10 +343,10 @@ img {
 
 /* contact-form promo */
     .contact-form-promo {
-        grid-template-columns: repeat(3, 370px);
+        padding-left: calc(50vw - 585px);
+        padding-right: calc(50vw - 585px);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 40px 30px;
-        padding-left: 153px;
-        padding-right: 153px;
     }
 
     .contact-form-promo .subtitle {
